@@ -9,11 +9,8 @@ body {
 }
 
 body.dark-mode {
-  background: #333333;
-  color: #ffffff;
-  transition: background 0.3s ease, color 0.3s ease; 
+  background-color: #000000;
 }
-
 
 body.modal-open {
   overflow: hidden; 

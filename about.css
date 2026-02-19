@@ -8,9 +8,7 @@ body {
 }
 
 body.dark-mode {
-  background: #333333;
-  color: #ffffff;
-  transition: background 0.3s ease, color 0.3s ease; 
+  background-color: #000000;
 }
 
 body.dark-mode {
@@ -300,7 +298,7 @@ body.dark-mode .about-intro p {
   color: #f5f5f5; 
 }
 
-.resume {
+.btn-download {
   display: inline-block;
   margin: 35px;
   text-decoration: none;
@@ -311,19 +309,19 @@ body.dark-mode .about-intro p {
   transition: all 0.3s ease;
 }
 
-.resume:hover {
+.btn-download:hover {
   background: #ffffff;
   color: #000000;
   border: 2px solid #000000;
   box-shadow: 0 5 30px rgba(0,0,0,0.5);
 }
 
-body.dark-mode .resume {
+body.dark-mode .btn-download {
   background: #ffffff;
   color: #000000;
 }
 
-body.dark-mode .resume:hover {
+body.dark-mode .btn-download:hover {
   background: #000000;
   color: #ffffff;
   border: 2px solid #ffffff;

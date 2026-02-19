@@ -1,7 +1,6 @@
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
 
-// Apply saved theme on load
 document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
@@ -48,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Toggle dark mode and save state
 if (darkModeToggle) {
   darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');

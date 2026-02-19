@@ -12,11 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 if (darkModeToggle) {
   darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    if (body.classList.contains('dark-mode')) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
-    }
+    localStorage.setItem("theme", body.classList.contains('dark-mode') ? "dark" : "light");
   });
 }
 
@@ -26,19 +22,16 @@ const nav = document.querySelector('nav');
 if (menuToggle && nav) {
   menuToggle.addEventListener('click', () => {
     if (nav.classList.contains('active')) {
-      // play slide-out animation
       nav.classList.add('closing');
       setTimeout(() => {
         nav.classList.remove('active');
         nav.classList.remove('closing');
-      }, 300); // duration ng animation
+      }, 300);
     } else {
-      // play slide-in animation
       nav.classList.add('active');
     }
   });
 
-  // auto-close nav on scroll
   window.addEventListener('scroll', () => {
     if (nav.classList.contains('active')) {
       nav.classList.add('closing');
