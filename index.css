@@ -8,6 +8,13 @@ body {
   overflow-x: hidden;
 }
 
+body.dark-mode {
+  background: #333333;
+  color: #ffffff;
+  transition: background 0.3s ease, color 0.3s ease; 
+}
+
+
 body.modal-open {
   overflow: hidden; 
 }

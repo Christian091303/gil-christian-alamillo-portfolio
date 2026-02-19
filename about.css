@@ -8,6 +8,12 @@ body {
 }
 
 body.dark-mode {
+  background: #333333;
+  color: #ffffff;
+  transition: background 0.3s ease, color 0.3s ease; 
+}
+
+body.dark-mode {
   background-color: #1b1b1b;
 }
 
